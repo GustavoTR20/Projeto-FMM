@@ -1,1 +1,81 @@
-style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.side-menu ul li {
+  margin: 20px 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.social-app {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-app img {
+  width: 20px;
+  height: 20px;
+}
+
