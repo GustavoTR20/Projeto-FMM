@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FMM Serviços</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">FMM</div>
+  <div class="logo">
+  <img src="images/logo png.png" alt="FMM Logo" class="logo-img">
+  <span>FMM</span>
+</div>
+
     <div class="hamburger">☰</div>
 
     <div class="side-menu" id="sideMenu">
@@ -27,27 +32,54 @@
     </div>
   </nav>
 
-  <section class="main banner">
-    <img src ="images/4k-laptop-on-gloomy-desk-f7k0g3xufpxxwjk9.webp" alt="Office Banner" class="banner-img">
-    <div class="banner-overlay">
+    <section class="banner">
+    <div class="banner-content">
       <h1>FMM Serviços</h1>
       <p>Transformando espaços com qualidade e dedicação.</p>
-      <a href="servicos.html" class="learn-more-btn">Saiba Mais</a>
+      <a href="#servicos" class="btn-banner">Saiba Mais</a>
+    </div>
   </section>
-  
-  <section class="featured-section">
-    <h2 class="featured-title">Nossos Serviços</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <img src="images/servico1.jpg" alt="Serviço 1">
-        <h3>Limpeza Residencial</h3>
-        <p>Deixe sua casa impecável com nossos serviços de limpeza profissional.</p>
-      </div>
-      <div class="service-card">
-        <img src="images/servico2.jpg" alt="Serviço 2">
-        <h3>Manutenção Predial</h3>
 
-  </section>
+<section id="servicos" class="servicos-section">
+  <h2>Nossos Serviços</h2>
+  <div class="carousel-container">
+    <button class="btn-prev">❮</button>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="servico-card">
+        <img src="images/servicos de limpeza.jpg" alt="Limpeza">
+        <h3>Limpeza e Conservação</h3>
+        <p>Ambientes limpos, organizados e higienizados para empresas e residências.</p>
+      </div>
+      <div class="servico-card">
+        <img src="images/recepcao.jpg" alt="Apoio Administrativo">
+        <h3>Apoio Administrativo</h3>
+        <p>Recepcionistas, copeiras, garçons e outros profissionais capacitados para suporte administrativo.</p>
+      </div>
+      <div class="servico-card">
+        <img src="images/area verde.jpg" alt="Áreas Verdes">
+        <h3>Áreas Verdes</h3>
+        <p>Serviços de jardinagem, poda, conservação e paisagismo.</p>
+      </div>
+      <div class="servico-card">
+        <img src="images/porteiro.jpg" alt="Segurança">
+        <h3>Porteiro / Segurança Desarmada</h3>
+        <p>Profissionais treinados para controle de acesso e segurança patrimonial sem armamento.</p>
+      </div>
+      <div class="servico-card">
+        <img src="images/transporte.jpg" alt="Transportes">
+        <h3>Transportes</h3>
+        <p>Soluções de transporte com motoristas capacitados e logística eficiente.</p>
+      </div>
+      <div class="servico-card">
+        <img src="images/garcom.jpg" alt="Copeira e Garçom">
+        <h3>Copeira / Garçom</h3>
+        <p>Atendimento cordial e suporte em eventos ou no dia a dia corporativo.</p>
+      </div>
+    </div>
+    <button class="btn-next">❯</button>
+  </div>
+</section>
+
   <script src="script.js"></script>
 </body>
 </html>
